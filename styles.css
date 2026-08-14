@@ -1,0 +1,26 @@
+/* styles.css — estilo sencillo, responsivo y sobrio para estudiantes de derecho */
+:root{
+  --bg:#f5f6f8;
+  --card:#ffffff;
+  --accent:#1f4e79; /* azul-profesional */
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial; margin:0; background:var(--bg); color:#111}
+header{padding:32px 16px; text-align:center; background:linear-gradient(90deg,var(--accent),#2b6ea3); color:white}
+header h1{margin:0; font-size:1.5rem}
+.subtitle{margin:6px 0 0; opacity:0.9}
+.container{max-width:720px; margin:32px auto; padding:0 16px}
+.timer-card{background:var(--card); padding:20px; border-radius:10px; box-shadow:0 6px 18px rgba(31,78,121,0.08)}
+.modes{display:flex; gap:8px; margin-bottom:16px}
+.mode{flex:1; padding:8px 12px; border-radius:6px; border:1px solid #e6e9ee; background:#fafafa; cursor:pointer}
+.mode.active{background:var(--accent); color:white; border:none}
+.display{font-size:4rem; text-align:center; margin:8px 0; font-weight:600}
+.controls{display:flex; gap:12px; justify-content:center; margin-bottom:12px}
+.controls button{padding:10px 16px; border-radius:8px; border:none; cursor:pointer; background:var(--accent); color:white}
+.controls button[disabled]{opacity:0.6; cursor:not-allowed}
+.settings{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:8px}
+.settings label{font-size:0.9rem; color:var(--muted)}
+.settings input{width:60px; margin-left:6px}
+.footer-note{margin-top:14px; color:var(--muted); font-size:0.9rem; text-align:center}
+@media(max-width:420px){.display{font-size:2.4rem}}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pomodoro — Dedicado a estudiantes de derecho</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Pomodoro — Para estudiantes de derecho</h1>
+    <p class="subtitle">Enfócate en tus lecturas y audiencias con sesiones cortas y efectivas</p>
+  </header>
+
+  <main class="container">
+    <section class="timer-card">
+      <div class="modes">
+        <button data-mode="pomodoro" class="mode active">Pomodoro</button>
+        <button data-mode="shortBreak" class="mode">Descanso</button>
+        <button data-mode="longBreak" class="mode">Descanso largo</button>
+      </div>
+
+      <div class="display">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+
+      <div class="controls">
+        <button id="start">Iniciar</button>
+        <button id="pause" disabled>Pausar</button>
+        <button id="reset">Reiniciar</button>
+      </div>
+
+      <div class="settings">
+        <label>Duración (min): <input id="pomodoro-min" type="number" min="1" value="25"></label>
+        <label>Descanso (min): <input id="short-min" type="number" min="1" value="5"></label>
+        <label>Descanso largo (min): <input id="long-min" type="number" min="1" value="15"></label>
+      </div>
+
+      <div class="footer-note">Orientado a estudiantes de derecho — agrega tus frases motivacionales y fotos más adelante.</div>
+    </section>
+  </main>
+
+  <audio id="bell" src="" preload="auto"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
